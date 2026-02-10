@@ -21,14 +21,51 @@
       </nav>
     </header>
     <main class="main-content">
-      <h1>Temario</h1>
-      <ol>
-        <li><a href="introduccion.html">introduccion</a></li>
-        <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript</a></li>
-        <li><a href="variables.html">Operadores en JavaScript</a></li>
-        <li><a href="comparadores.html">Comparadores</a></li>
-        <li><a href="condicionales.html">Condicionales</a></li>
-      </ol>
+      <div class="main-content__sections">
+        <section class="main-content__temario">
+          <h2><a href="temario.html">Temario</a></h2>
+          <ol>
+            <li><a href="introduccion.html">introduccion</a></li>
+            <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript?</a></li>
+            <li><a href="variables.html">Variables</a></li>
+            <li><a href="operadores.html">Operadores</a></li>
+            <li><a href="comparadores.html">Comparadores</a></li>
+            <li><a href="condicionales.html">Condicionales</a></li>
+          </ol>
+          </ol>
+        </section>
+        <section class="main-content__topic">
+          <h1>¿Cómo enlazar JavaScript?</h1>
+          <p>
+            Existen 4 formas de enlazarlo
+          </p>
+          <ul>
+            <li>En linea</li>
+            <li>Como contenido en la etiqueta</li>
+            <li>Como contenido en un archivo de formaro ".js"</li>
+            <li>Con un require</li>
+          </ul>
+          <h2>Ejemplo de en linea</h2>
+          <h3 onclick="alert('Hola')">Da click aqui</h3>
+          <p>Codigo:</p>
+          <p>&lt;h3 oncliclk="alert('Hola')" > </p>
+          <p>Da click aqui</p>
+          <p>< / h3 ></p>
+          <h2>Con script</h2>
+          <p>
+          &lt;script type="text/javascript">
+            alert('Hola mundo');
+          < / script >
+          </p>
+          <p>Hace que salte una alerta al cargar la página</p>
+          <h2>Enlazando archivo</h2>
+          <p>
+            &lt;script src="codigo.js">&lt;/script>
+          </p>
+          <p>Tambien hace que salte una alerta al cargar la página</p>
+          <a class="hero__btn" href="variables.html">Siguiente capitulo</a>
+        </section>
+      </div>
     </main>
 
     <footer class="footer__">

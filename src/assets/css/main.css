@@ -98,6 +98,7 @@
   max-width: auto;
   margin-top: 2%;
   padding: 2rem;
+  /* gap: 30px; */
   box-sizing: border-box;
 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -105,7 +106,6 @@
   font-weight: 600;
   /* line-height: 1.6; */
   color: #333;
-  text-align: center;
   text-decoration: none;
 
   background: #f8fafc;
@@ -113,6 +113,32 @@
   border: 2px solid #333;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.main-content__index {
+  width: 50%;
+}
+
+.main-content__sections {
+  /* Posicionamiento y modelo de cajas */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* 2. Modelo de cajas */
+  width: 100%;
+  max-width: auto;
+  box-sizing: border-box;
+  /* 3. Tipografia */
+  text-align: left;
+}
+
+.main-content__temario {
+  padding-right: 5%;
+  width: 20%;
+}
+
+.main-content__topic {
+  padding-left: 5%;
 }
 
 .footer__ {
@@ -141,5 +167,4 @@
   background-size: cover;
   border: none;
   border-radius: 12px;
-  
 }

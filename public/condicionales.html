@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/assets/css/main.css">
+    <link rel="stylesheet" href="../src/assets/css/main.css" />
     <title>JS Course: Condicionales</title>
   </head>
   <body>
@@ -21,14 +21,53 @@
       </nav>
     </header>
     <main class="main-content">
-      <h1>Temario</h1>
-      <ol>
-        <li><a href="introduccion.html">introduccion</a></li>
-        <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript</a></li>
-        <li><a href="variables.html">Operadores en JavaScript</a></li>
-        <li><a href="comparadores.html">Comparadores</a></li>
-        <li><a href="condicionales.html">Condicionales</a></li>
-      </ol>
+      <div class="main-content__sections">
+        <section class="main-content__temario">
+          <h2><a href="temario.html">Temario</a></h2>
+          <ol>
+            <li><a href="introduccion.html">introduccion</a></li>
+            <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript?</a></li>
+            <li><a href="variables.html">Variables</a></li>
+            <li><a href="operadores.html">Operadores</a></li>
+            <li><a href="comparadores.html">Comparadores</a></li>
+            <li><a href="condicionales.html">Condicionales</a></li>
+          </ol>
+        </section>
+        <section class="main-content__topic">
+          <h1>Condicionales</h1>
+          <p>
+            Los condicionales en JavaScript permiten que el programa tome
+            decisiones según una condición.
+          </p>
+          <p>
+            Con estructuras como if, else y else if, el código puede ejecutar
+            diferentes acciones dependiendo de si una expresión es verdadera o
+            falsa. Son la base para crear lógica, control de flujo y
+            comportamientos dinámicos en una aplicación.
+          </p>
+          <h2>Ejemplo</h2>
+          <p>
+            let promedio = 9.5;<br />
+            let ingresosFamiliares = 1200;<br />
+            <br />
+            if (promedio >= 9.0) {<br />
+            console.log("Cumples con el promedio mínimo.");<br />
+            <br />
+            // Este es el IF ANIDADO<br />
+            if (ingresosFamiliares <= 1500) {<br />
+            console.log("¡Felicidades! Se te ha otorgado la beca completa.");<br />
+            } else {<br />
+            console.log("Promedio excelente, pero tus ingresos superan el límite
+            para la beca.");<br />
+            }<br />
+            <br />
+            } else {<br />
+            console.log("Lo sentimos, el promedio mínimo es de 9.0.");<br />
+            }
+          </p>
+          <a class="hero__btn" href="../index.html">Siguiente capitulo</a>
+        </section>
+      </div>
     </main>
 
     <footer class="footer__">

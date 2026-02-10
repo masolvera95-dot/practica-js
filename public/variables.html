@@ -21,14 +21,54 @@
       </nav>
     </header>
     <main class="main-content">
-      <h1>Temario</h1>
-      <ol>
-        <li><a href="introduccion.html">introduccion</a></li>
-        <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript</a></li>
-        <li><a href="variables.html">Operadores en JavaScript</a></li>
-        <li><a href="comparadores.html">Comparadores</a></li>
-        <li><a href="condicionales.html">Condicionales</a></li>
-      </ol>
+      <div class="main-content__sections">
+        <section class="main-content__temario">
+          <h2><a href="temario.html">Temario</a></h2>
+          <ol>
+            <li><a href="introduccion.html">introduccion</a></li>
+            <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript?</a></li>
+            <li><a href="variables.html">Variables</a></li>
+            <li><a href="operadores.html">Operadores</a></li>
+            <li><a href="comparadores.html">Comparadores</a></li>
+            <li><a href="condicionales.html">Condicionales</a></li>
+          </ol>
+        </section>
+        <section class="main-content__topic">
+          <h1>Introducción</h1>
+          <p>Las variables de coforman de 3 partes</p>
+          <p>recipiente = "papel"</p>
+          <p>variable = valor</p>
+          <h2>Tipos de datos</h2>
+          <p>Existen varios tipos de datos como: String, Number, Symbol.</p>
+          <ul>
+            <li>String: "Cadena de datos"</li>
+            <li>Number: 23</li>
+            <li>Booleano: true o false</li>
+          </ul>
+          <h2>Tipos de datos especiales</h2>
+          <p>Son los siguientes: </p>
+          <ul>
+            <li>undefined</li>
+            <li>null</li>
+            <li>NAN</li>
+          </ul>
+          <h2>Declaracion de variables</h2>
+          <p>Existen 3 formas de declarar variables:</p>
+          <ul>
+            <li>var: Ya no se usa.</li>
+            <li>let: Si el valor de la variable va a cambiar</li>
+            <li>const: Si el valor de la variable no va a cambiar.</li>
+            <h3>Ejemplo</h3>
+            <p>var numero = 50;</p>
+            <p>let numero = 50;</p>
+            <p>cont nombre = "tu_nombre_no_cambia";</p>
+          </ul>
+          <p>Las variables tipo "const" se inicializan al declararse. Las variables tipo "let" se pueden declarar y luego asignar valor o igual que con las tipo "const" se pueden inizializar al declararse.</p>
+          <h3 onclick="let nombre = prompt('Dame tu nombre'); alert('Hola ' + nombre)" >Esto es un ejemplo. Da click aqui</h3>
+
+          <a class="hero__btn" href="operadores.html">Siguiente capitulo</a>
+        </section>
+      </div>
     </main>
 
     <footer class="footer__">

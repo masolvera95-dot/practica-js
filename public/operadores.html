@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/assets/css/main.css">
+    <link rel="stylesheet" href="../src/assets/css/main.css" />
     <title>JS Course: Operadores</title>
   </head>
   <body>
@@ -21,15 +21,170 @@
       </nav>
     </header>
     <main class="main-content">
-      <h1>Temario</h1>
-      <ol>
-        <li><a href="introduccion.html">introduccion</a></li>
-        <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript</a></li>
-        <li><a href="variables.html">Variables</a></li>
-        <li><a href="operadores.html">Operadores</a></li>
-        <li><a href="comparadores.html">Comparadores</a></li>
-        <li><a href="condicionales.html">Condicionales</a></li>
-      </ol>
+      <div class="main-content__sections">
+        <section class="main-content__temario">
+          <h2><a href="temario.html">Temario</a></h2>
+          <ol>
+            <li><a href="introduccion.html">introduccion</a></li>
+            <li><a href="enlazar-js.html">¿Cómo enlazar JavaScript?</a></li>
+            <li><a href="variables.html">Variables</a></li>
+            <li><a href="operadores.html">Operadores</a></li>
+            <li><a href="comparadores.html">Comparadores</a></li>
+            <li><a href="condicionales.html">Condicionales</a></li>
+          </ol>
+        </section>
+        <section class="main-content__topic">
+          <h1>Operadores en JavaScript</h1>
+          <p>Existen 2 tipod de operadores:</p>
+          <ul>
+            <li>Operadores de asignación</li>
+            <li>Operadores aritmeticos</li>
+          </ul>
+          <h3>Operadores de asignación</h3>
+          <table>
+            <tr>
+              <th>Abreviaciones</th>
+              <th>Significado</th>
+            </tr>
+            <tr>
+              <td>x = y</td>
+              <td>x = y</td>
+            </tr>
+            <tr>
+              <td>x += y</td>
+              <td>x = x + y</td>
+            </tr>
+            <tr>
+              <td>x -= y</td>
+              <td>x = x - y</td>
+            </tr>
+            <tr>
+              <td>x *= y</td>
+              <td>x = x * y</td>
+            </tr>
+            <tr>
+              <td>x /= y</td>
+              <td>x = x / y</td>
+            </tr>
+            <tr>
+              <td>x %= y</td>
+              <td>x = x % y</td>
+            </tr>
+            <tr>
+              <td>x **= y</td>
+              <td>x = x ** y</td>
+            </tr>
+            <tr>
+              <td>x <<= y</td>
+              <td>x = x <<= y</td>
+            </tr>
+            <tr>
+              <td>x >>= y</td>
+              <td>x = x >> y</td>
+            </tr>
+            <tr>
+              <td>x >>>= y</td>
+              <td>x = x >>>= y</td>
+            </tr>
+            <tr>
+              <td>AND: x &= y</td>
+              <td>x = x & y</td>
+            </tr>
+            <tr>
+              <td>XOR: x ^= y</td>
+              <td>x = x ^ y</td>
+            </tr>
+            <tr>
+              <td>x |= y</td>
+              <td>x = x | y</td>
+            </tr>
+          </table>
+          <h4>Código de ejemplo</h4>
+          <p>let number = 10;</p>
+          <p>number += 5;</p>
+          <p>document.write(numero); // Código de JavaScript</p>
+          <p>- Esto da como resultado 15.</p>
+          <script type="text/JavaScript">
+            let number = 10;
+            number += 5;
+            document.write("- Resuldado desde JS = " + number);
+          </script>
+          <h4>Otro Ejemplo: Incrementa en 1</h4>
+          <p>let variable = 0;</p>
+          <p>variable++;</p>
+          <p>- Resultado = 1</p>
+          <script type="text/JavaScript">
+            let variable = 0;
+            variable ++;
+            document.write("- Resultado desde JS = " + variable);
+            let numero = -10
+            document.write(`
+            <br>
+            <h4>Otro Ejemplo: Asignación de numero negativos.</h4>
+            <p>
+              let numero = -10;
+            </p>
+            <p>
+              document.write(numero);
+            </p>
+            <p>
+              - Da como resultado = -10
+            </p>
+            ` + "- Resuldado desde JS = " + numero);
+          </script>
+          <h4>Otro ejemplo: COnversion de numeros a String</h4>
+          <p>
+            let numero1 = 53;<br />
+            let numero2 = 8;<br />
+            let frase = "" + numero1 + numero2;<br />
+            - Da como resultado: 538;
+          </p>
+          <script type="text/JavaScript">
+            let numero1 = 53;
+            let numero2 = 8;
+            let frase = "" +  numero1 + numero2;
+            document.write("- Resuldado desde JS = " + frase);
+          </script>
+          <h4>Otro Ejemplo: Uso de funcion "concat();"</h4>
+          <p>
+            let numero1 = "53";<br />
+            ñet numero2 = 8;<br />
+            frase = numero1.concat(numero2);<br />
+            document.write("frase");<br />
+            - Da como resultado = 538
+          </p>
+          <script type="text/JavaScript">
+            numero1 = "53";
+            numero2 = 8;
+            frase = numero1.concat(numero2);
+            document.write("- Resultado desde JS = " + frase);
+          </script>
+          <p>
+            Tambien se puede concatenar con "${}". <br>
+            let nombre = "Alejandro";<br>
+            let frase = `Soy ${nombre} y estoy aqui.`;<br>
+            document-write(frase);<br>
+            - Da como resultado: Soy Alejandro y estoy aqui.
+          </p>
+          <script type="text/JavaScript">
+            let nombre = "Alejandro";
+            frase = `Soy ${nombre} y estoy aqui.`;
+            document.write("- Resultado desde JS = " + frase);
+          </script>
+          <p>
+            Se usan las tildes "` `" para concatenar cadenas y poder escrivir codigo HTML con saltos de linea.
+          </p>
+          <ol>
+            <li>frase = "Hola 'mundo'!";<br> 
+              - Para mostrar comillas simples se usa por fuera comillas dobles.</li>
+              <li>frase = 'Hola "mundo"!';<br>
+              - Para mostrar comillas dobles se usa por fuera comillas simples</li>
+          </ol>
+          <br />
+          <br />
+          <a class="hero__btn" href="comparadores.html">Siguiente capitulo</a>
+        </section>
+      </div>
     </main>
 
     <footer class="footer__">
