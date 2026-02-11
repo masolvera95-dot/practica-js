@@ -1,0 +1,60 @@
+/* Se da estilo al box del desarrollador */
+.card {
+  /* 1. Posicionamiento y modelo de cajas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* 2. Modelo de caja */
+  width: 50%;
+  max-width: auto;
+  box-sizing: content-box;
+
+  /* 3. Tipografia */
+  color: #0a281c;
+
+  /* 4. Apariencia visual */
+  background-color: #98abb4;
+  border: 2px solid #0a281c;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 5);
+
+  /* 5. Otros/efectos */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #1078b5;
+  color: #fff;
+}
+
+.card-img {
+  /* Modelo de cajas */
+  width: 300px;
+  max-width: auto;
+  margin-top: 5%;
+  box-sizing: border-box;
+
+  /* Apariencia vidual */
+  border: 2px solid #0a281c;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 5);
+}
+
+.card-name {
+  /* Tipografia */
+  text-shadow: 0 1px 2px #0a281c;
+}
+.card-rol {
+  /* Tipografia */
+  text-shadow: 0 1px 2px #0a281c;
+}
+.card-description {
+    /* Modelos de caja */
+    width: 80%;
+    padding: 20px;
+  /* Tipografia */
+  text-shadow: 0 1px 2px #0a281c;
+}
